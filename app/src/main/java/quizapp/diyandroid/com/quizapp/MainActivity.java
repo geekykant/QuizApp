@@ -103,7 +103,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             if (((EditText) findViewById(R.id.type_question_4)).getText().toString().toLowerCase().equals(getResources().getText(R.string.kik)))
                 score++;
-            if (((CheckBox) findViewById(R.id.question_9_box1)).isChecked() && ((CheckBox) findViewById(R.id.question_9_box3)).isChecked())
+            if (((CheckBox) findViewById(R.id.question_9_box1)).isChecked() && ((CheckBox) findViewById(R.id.question_9_box3)).isChecked() &&
+                    !((CheckBox) findViewById(R.id.question_9_box2)).isChecked() && !((CheckBox) findViewById(R.id.question_9_box4)).isChecked() )
                 score++;
         }
     }
